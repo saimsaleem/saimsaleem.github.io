@@ -1,3 +1,8 @@
+#content-container,
+#animation-container {
+  display: none;
+}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -21,11 +26,12 @@ header{
 }
 nav{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 0px;
 }
 section.section1{
     padding: 20px;
+    padding-bottom: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +89,7 @@ nav ul{
     border: 1px;
     border-color: white;
     border-radius: 100%;
+    margin-top: 60px;
 }
 
 .title{
