@@ -1,0 +1,398 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0px;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+section.section1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 633px;
+}
+.and{
+    margin-bottom: 70px;
+    padding-top: 0px;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+nav ul{
+    margin-left: 0px;
+    padding: 0%;
+}
+
+.btn{
+    background-color: #00ced1;
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+    color: black;
+    font-weight:400;
+    margin-left: 900px;
+}
+.intro{
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 100px;
+
+}
+
+.contact{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: black;
+    color: darkturquoise;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.contact:hover{
+    opacity: 70%;
+}
+
+.image1 img{
+    height: 250px; 
+    width: 250px;
+    border: 1px;
+    border-color: white;
+    border-radius: 100%;
+}
+
+.title{
+    color: darkturquoise;
+}
+.images{
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+}
+.logos{
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.logos.a{
+    animation-name: slidefromleft;
+    animation-duration: 2.5s;
+}
+.logos.b{
+    animation-name: slidefromleft;
+    animation-duration: 3s;
+}
+.logos.c{
+    animation-name: slidefromleft;
+    animation-duration: 3.5s;
+}
+.logos.d{
+    animation-name: slidefromleft;
+    animation-duration: 4s;
+}
+
+section.section2{
+    background-color: white;
+    height: 700px;
+}
+
+.education{
+    margin: 50px;
+}
+.heading{
+    font-size: 36px;
+    display: flex;
+}
+.headlogo{
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.headlogo.institute{
+    margin-top: 20px;
+}
+
+.grid a{
+    text-decoration: none;
+}
+
+.grid{
+    margin-top: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 5px solid;
+    border-color: rgb(222, 222, 222);
+    max-width: 300px;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+    font-size: small;
+    width: 270px;
+    color: black;
+    text-decoration: none;
+}
+
+.card li{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    text-align: left;
+    background-color: rgba(222, 222, 222, 0.26);
+}
+
+ul.courses li{
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-top: 1px;
+    text-decoration: none;
+}
+
+.card:hover{
+    scale: 105%;
+}
+.card.sec3 {
+    height: 200px;
+}
+
+li.lang{
+    width: 85%;
+}
+
+.desc{
+    margin: 10px;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.column{
+    display: flex;
+}
+fieldset{
+    margin: 4px;
+}
+
+footer{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 250px;
+    background-color: darkturquoise;
+}
+footer a{
+    color: black;
+}
+
+.contacts{
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.contacts a{
+    margin: 20px;
+    text-decoration: none;
+}
+
+.end{
+    margin-right: 400px;
+}
+.images.foot{
+    padding: 0px;
+    justify-content: left;
+    margin: 0px;
+    margin-left: -10px;
+}
+
+@keyframes slidefromleft{
+    0%{
+        transform: translateX(500%);
+    }
+
+100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slidefrombelow{
+    0%{
+        transform: translateY(100%);
+    }
+
+100%{
+        transform: translateY(0%);
+    }
+}
+
+@media (max-width:767px){
+    .grid{
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .projects{
+        margin-top: 100%;
+    }
+    .contacts{
+        margin-left: 10px;
+    }
+    .end{
+        margin-right: 20px;
+    }
+    .btn{
+        margin-left: 100px;
+    }
+
+    }
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 460px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+@media (max-width:767px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    }
+
+
+
+
+
+.form{
+   margin-top: 150px;
+   margin-left: 250px;
+
+}
+
+.timebody{
+    display: inline-block;
+    justify-content: center;
+}
+
+.add{
+    width: 60px;
+}
+
+.label{
+    margin: 5px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.label1{
+    width: 30px;
+    margin: 0px;
+}
+
+.coursess{
+    display: inline-block;
+}
+
+tbody{
+    width: auto;
+}
+
+table{
+    margin: 20px;
+    width: auto ;
+    max-width: 2000px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+th,td{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid;
+}
