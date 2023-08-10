@@ -64,17 +64,12 @@ nav ul a{
     background-color: rgba(0, 0, 0, 0.366);
 }
 
-
-
 nav ul{
     margin-left: 0px;
     padding: 6px;
     padding-bottom: 10px;
 }
 
-.btn{
-    margin-left: 900px;
-}
 .servicebtn{
     background-color: #00ced1;
     border-radius: 5px;
@@ -82,6 +77,7 @@ nav ul{
     width: 120px;
     color: black;
     font-weight:400;
+    margin-left: 850px;
 }
 .intro{
     color: white;
