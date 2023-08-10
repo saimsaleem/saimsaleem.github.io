@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 0%;
 }
 
 *{
@@ -12,9 +12,11 @@
 
 body{
     margin: 0px;
+    padding: 0%;
+    background-color: black;
 }
 header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -25,12 +27,26 @@ nav{
     margin-left: 0px;
 }
 section.section1{
-    padding: 20px;
+    margin: 0px;
+    padding: 0%;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     height: 633px;
+}
+.section1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background-image: url('/images/Background.jpg');
+        background-size: cover;
+        opacity: 0.5;
+        z-index: -1;
+      
 }
 .and{
     margin-bottom: 70px;
@@ -39,21 +55,33 @@ section.section1{
 nav ul a{
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 5px;
 }
+
+.links:hover{
+    background-color: rgba(0, 0, 0, 0.366);
+}
+
+
+
 nav ul{
     margin-left: 0px;
-    padding: 0%;
+    padding: 6px;
+    padding-bottom: 10px;
 }
 
 .btn{
+    margin-left: 900px;
+}
+.servicebtn{
     background-color: #00ced1;
     border-radius: 5px;
     height: 35px;
     width: 120px;
     color: black;
     font-weight:400;
-    margin-left: 900px;
 }
 .intro{
     color: white;
@@ -68,7 +96,7 @@ nav ul{
     height: 40px;
     text-align: center;
     margin-left: 50px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     color: darkturquoise;
     border: 1px solid;
     border-radius: 5px;
@@ -117,8 +145,14 @@ nav ul{
 }
 
 section.section2{
+    margin: 0px;
+    padding-top: 20px;
     background-color: white;
     height: 700px;
+}
+
+.section3{
+    background-color: white;
 }
 
 .education{
