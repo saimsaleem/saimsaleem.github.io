@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <script src="index.js"></script>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="/images/Saim.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,10 @@
 </head>
 <body>
 
+    <div class="loading-screen">
+    <div class="loader"></div>
+  </div>
+<div class="main-content">
     <header class="flex" style="font-family: 'Roboto Slab';">
         <nav class="flex">
             <ul>
@@ -19,7 +24,7 @@
                 <a class="links" href="index.html">Home</a>
                 <a class="links" href="#">About</a>
                 <a class="links" href="#">Services</a>
-                <button class="servicebtn">Get Service</button>
+                <button id="servicebtn" class="servicebtn">Get Service</button>
             </li>
               </ul>
             
@@ -207,6 +212,6 @@
               popup.classList.toggle("show");
             }
             </script>
-
+</div>
 </body>
 </html>
